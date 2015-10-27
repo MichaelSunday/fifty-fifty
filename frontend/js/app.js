@@ -1,28 +1,28 @@
 angular
-  .module('FiftyFifty', ['ui.router'])
-  .config(FiftyRouter);
+  .module('FiftyFifty', [])
+//   .config(FiftyRouter);
 
-  function CriminalRouter($stateProvider, $urlRouterProvider){
+//   function CriminalRouter($stateProvider, $urlRouterProvider){
 
-  $urlRouterProvider.otherwise("/index");
+//   $urlRouterProvider.otherwise("/index");
 
-  $stateProvider
-  .state('index', {
-    url: '/genres',
-    templateUrl: 'genre.html'
-  })
-  .state('new', {
-    url: '/new',
-    templateUrl: 'new.html'
-  })
-  .state('about', {
-    url: '/about',
-    templateUrl: 'about.html'
-  })
-  .state('show', {
-    url: '/criminals/:id',
-    templateUrl: 'show.html'
-  });
+//   $stateProvider
+//   .state('index', {
+//     url: '/genres',
+//     templateUrl: 'genre.html'
+//   })
+//   .state('new', {
+//     url: '/new',
+//     templateUrl: 'new.html'
+//   })
+//   .state('about', {
+//     url: '/about',
+//     templateUrl: 'about.html'
+//   })
+//   .state('show', {
+//     url: '/criminals/:id',
+//     templateUrl: 'show.html'
+//   });
 
 
-}
+// }
