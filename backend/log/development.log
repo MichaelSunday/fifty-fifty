@@ -6141,3 +6141,81 @@ Can't verify CSRF token authenticity
   [1m[35m (1.1ms)[0m  COMMIT
 Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 4.8ms)
   [1m[36mLike Load (0.5ms)[0m  [1mSELECT "likes".* FROM "likes"[0m
+
+
+Started POST "/likes" for ::1 at 2015-10-27 09:51:36 -0700
+Processing by LikesController#index as */*
+  Parameters: {"user_id"=>5, "spotify_id"=>"6Bygk8YvDJTfJSuY5ccUJH", "like"=>{"user_id"=>5}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "6Bygk8YvDJTfJSuY5ccUJH"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 1], ["user_id", 5], ["created_at", "2015-10-27 16:51:36.629073"], ["updated_at", "2015-10-27 16:51:36.629073"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 856ms (Views: 0.8ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/tracks" for ::1 at 2015-10-27 09:52:19 -0700
+Processing by TracksController#index as */*
+  Parameters: {"genre"=>"hip hop", "track"=>{"genre"=>"hip hop"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3410ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/likes" for ::1 at 2015-10-27 09:53:42 -0700
+Processing by LikesController#index as */*
+  Parameters: {"artist_id"=>"1ZwdS5xdxEREPySFridCfh", "user_id"=>5, "like"=>{"artist_id"=>"1ZwdS5xdxEREPySFridCfh", "user_id"=>5}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.4ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "artists" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2015-10-27 16:53:42.627710"], ["updated_at", "2015-10-27 16:53:42.627710"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 2], ["user_id", 5], ["created_at", "2015-10-27 16:53:42.632606"], ["updated_at", "2015-10-27 16:53:42.632606"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.6ms)
+
+NoMethodError (undefined method `related_artists' for nil:NilClass):
+  app/controllers/likes_controller.rb:13:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fa480a7eb18 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fa480a7e618 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fa480a849c8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/likes" for ::1 at 2015-10-27 09:55:04 -0700
+Processing by LikesController#index as */*
+  Parameters: {"user_id"=>5, "spotify_id"=>"1ZwdS5xdxEREPySFridCfh", "like"=>{"user_id"=>5}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "1ZwdS5xdxEREPySFridCfh"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "1ZwdS5xdxEREPySFridCfh"], ["created_at", "2015-10-27 16:55:04.446927"], ["updated_at", "2015-10-27 16:55:04.446927"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 3], ["user_id", 5], ["created_at", "2015-10-27 16:55:04.451448"], ["updated_at", "2015-10-27 16:55:04.451448"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 3517ms (Views: 1.0ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/likes" for ::1 at 2015-10-27 09:56:02 -0700
+Processing by LikesController#index as */*
+  Parameters: {"user_id"=>5, "spotify_id"=>"1ZwdS5xdxEREPySFridCfh", "like"=>{"user_id"=>5}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "1ZwdS5xdxEREPySFridCfh"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 3], ["user_id", 5], ["created_at", "2015-10-27 16:56:02.761449"], ["updated_at", "2015-10-27 16:56:02.761449"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Completed 200 OK in 932ms (Views: 1.0ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/likes" for ::1 at 2015-10-27 09:56:13 -0700
+Processing by LikesController#index as */*
+  Parameters: {"user_id"=>5, "spotify_id"=>"1ZwdS5xdxEREPySFridCfh", "like"=>{"user_id"=>5}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "1ZwdS5xdxEREPySFridCfh"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 3], ["user_id", 5], ["created_at", "2015-10-27 16:56:13.187064"], ["updated_at", "2015-10-27 16:56:13.187064"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Completed 200 OK in 735ms (Views: 0.8ms | ActiveRecord: 1.4ms)
