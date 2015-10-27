@@ -1,1 +1,5 @@
 <h1><%= @user.name %></h1>
+<%= link_to 'Sign in with Spotify', '/auth/spotify' %>
+<% @test.each do |artist| %>
+	 <%= artist.name %>
+<% end %>

@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+gem 'acts_as_votable', '~> 0.10.0'
+
+gem 'echonest-ruby-api'
 
 gem 'bcrypt', '~> 3.1.7'
 

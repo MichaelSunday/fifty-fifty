@@ -5,9 +5,15 @@ Rails.application.routes.draw do
     # resources :sessions, only: [:new, :create]
     # get '/' => 'sessions#new', as: :new_session
 
-  get '/' => 'sessions#new', as: :new_session
+  post '/' => 'sessions#new', as: :new_session
   get 'users/new' => 'users#new', as: :new_user
-  # get 'users/index' => 'users#index' as: :home_page
-  post 'users/login' => 'sessions#create', as: :create_session
+  get 'users/index' => 'users#index', as: :home_page
+  post 'users/login' => 'sessions#create', as: :create_session  
   post 'users/create' => 'users#create', as: :users
+  get '/auth/spotify/callback', to: 'users#spotify'
+  get '/genres' => 'genres#index', as: :homepage
+  post '/tracks' => 'tracks#index', as: :music_player
+  post '/likes' => 'likes#index', as: :likes_table
+  post '/dislikes' => 'dislikes#index', as: :dislikes_table
+  post '/artists' => 'artists#index', as: :artists_table
 end
