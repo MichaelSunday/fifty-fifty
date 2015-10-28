@@ -9663,3 +9663,602 @@ Processing by TracksController#index as HTML
   Parameters: {"genre"=>"a cappella"}
 Can't verify CSRF token authenticity
 Completed 200 OK in 682ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-28 13:01:57 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 428ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:02:34 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1149ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:02:41 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 563ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:02:44 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 648ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:02:46 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 594ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:03:14 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 576ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:03:18 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 635ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:03:20 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 575ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:03:22 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 544ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:03:27 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 624ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:03:31 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 547ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:03:33 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 559ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:03:37 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 539ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:03:47 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 660ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:03:58 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 727ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:04:01 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 712ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:04:04 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 602ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:04:06 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 716ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:04:08 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 561ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:04:09 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 557ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:04:11 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 699ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:04:14 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 567ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:04:16 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 546ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:04:18 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 575ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 13:04:20 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 594ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:28:23 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1391ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:28:31 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 501ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:29:10 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 581ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:29:13 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 587ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:29:15 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 627ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:30:27 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 865ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:30:30 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 652ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:30:32 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 535ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:30:33 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 489ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:30:35 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 573ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:30:39 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 515ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:30:41 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 561ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 14:30:42 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 638ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:00:42 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3161ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:01:12 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 940ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:02:01 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 825ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:02:03 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 840ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:02:33 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 772ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:03:13 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 847ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:03:20 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 584ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:03:50 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2883ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:08:05 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1005ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:08:18 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 572ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:16:27 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3056ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:21:09 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3075ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:21:43 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1144ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:22:02 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 591ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:22:24 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 539ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:22:38 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 779ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:23:17 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 950ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:24:39 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 932ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:25:06 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 596ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:26:36 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 966ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:26:57 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 577ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:27:10 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 614ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/undefined" for ::1 at 2015-10-28 15:27:26 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"undefined"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 511ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 5: Invalid parameter):
+  app/controllers/tracks_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (68.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.1ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:27:42 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 829ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/undefined" for ::1 at 2015-10-28 15:28:08 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"undefined"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 221ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 5: Invalid parameter):
+  app/controllers/tracks_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (48.9ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:28:23 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3502ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:28:59 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 825ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:29:10 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 720ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:32:16 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1098ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:32:39 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 616ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:33:09 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 613ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:33:24 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 813ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:34:16 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2866ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:34:31 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 640ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:34:37 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 654ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:34:42 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 495ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:34:47 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 636ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:37:28 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1030ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:37:41 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 794ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:38:11 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 900ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:38:19 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 757ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 15:38:36 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 657ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-28 16:07:01 -0700
+Processing by TracksController#index as */*
+  Parameters: {"genre"=>"hip hop", "track"=>{}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1217ms (Views: 1.2ms | ActiveRecord: 0.0ms)

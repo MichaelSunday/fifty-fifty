@@ -18,9 +18,15 @@ function TrackController($http){
       .then(function(response){
         self.all = response.data;
         console.log(response.data);
+        playTrack(response.data.preview_url);
     });
   }
 
   getTracks();
+
+  var playTrack = function(track){
+    var song = new Audio(track);
+    song.play();
+  }
 
 }

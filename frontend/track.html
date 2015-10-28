@@ -12,14 +12,17 @@
 <body>
 	<section ng-controller="TrackController as tracks">
 
-      <p>{{tracks.all.name}}</p>
       <div ng-repeat="artist in tracks.all.artists">
         {{ artist.name }}
       </div>
-    </li>
+      <p>{{tracks.all.name}}</p>
+<!--       <p id="url">{{tracks.all.preview_url}}</p>
+      <audio autoplay="autoplay" controls="controls">  
+         <source src="{{tracks.all.preview_url}}" />  
+         <source src="{{tracks.all.preview_url}}" />  
+      </audio>  -->
 
-	</section>
-
+  </section>
 
 </body>
 </html>
