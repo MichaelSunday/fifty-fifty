@@ -8,15 +8,15 @@ function GenreController($http){
   self.all = [];
   self.getGenres = getGenres;
 
-  getGenres();
-  function getGenres(){
+  var getGenres = function(){
     $http
-      .get('http://localhost:3000/genres/')
+      .get('http://localhost:3000/genres')
       .then(function(response){
-        self.all = response.data;
+        self.all = response.data.genres;
         console.log(response.data);
     });
   }
 
+  getGenres();
 
 }
