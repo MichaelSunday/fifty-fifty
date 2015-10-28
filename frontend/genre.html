@@ -12,8 +12,9 @@
 <body>
 	<section ng-controller="GenreController as genres">
 		<li ng-repeat="genre in genres.all">
-			{{2 + 2}}
-			{{genre.name}}
+			<a href="/track.html?body={{genre.name}}">
+				<p>{{genre.name}}</p>
+			</a>
 		</li>
 	</section>
 

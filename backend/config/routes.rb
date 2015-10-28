@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # devise_for :users
   # namespace :api do
     # resources :users, only: [:index, :show, :create, :new]
   # end
@@ -12,7 +13,7 @@ Rails.application.routes.draw do
   post 'users/create' => 'users#create', as: :users
   get '/auth/spotify/callback', to: 'users#spotify'
   get '/genres' => 'genres#index', as: :homepage
-  post '/tracks' => 'tracks#index', as: :music_player
+  post '/tracks/:genre' => 'tracks#index', as: :music_player
   post '/likes' => 'likes#index', as: :likes_table
   post '/dislikes' => 'dislikes#index', as: :dislikes_table
   post '/artists' => 'artists#index', as: :artists_table
