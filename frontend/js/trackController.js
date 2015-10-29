@@ -20,6 +20,7 @@ function TrackController($http){
         console.log(response.data);
         playTrack(response.data.preview_url);
     });
+
   }
 
   getTracks();

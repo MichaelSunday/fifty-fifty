@@ -6,6 +6,10 @@ Rails.application.routes.draw do
     # resources :sessions, only: [:new, :create]
     # get '/' => 'sessions#new', as: :new_session
 
+
+
+
+
   post '/' => 'sessions#new', as: :new_session
   get 'users/new' => 'users#new', as: :new_user
   get 'users/index' => 'users#index', as: :home_page
@@ -17,4 +21,5 @@ Rails.application.routes.draw do
   post '/likes' => 'likes#index', as: :likes_table
   post '/dislikes' => 'dislikes#index', as: :dislikes_table
   post '/artists' => 'artists#index', as: :artists_table
+  post 'auth' => 'auth#authenticate'
 end

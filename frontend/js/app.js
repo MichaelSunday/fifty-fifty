@@ -1,28 +1,29 @@
 angular
-  .module('FiftyFifty', [])
-//   .config(FiftyRouter);
+  .module('FiftyFifty', ["ui.router"])
+  .config(['$httpProvider', function($httpProvider) {
+  	$httpProvider.defaults.xrsfCookieName = "csrftoken";
+  	$httpProvider.defaults.xrsfHeaderName = "X-CSRF-Token";
 
-//   function CriminalRouter($stateProvider, $urlRouterProvider){
+  }]) 
+  .config(FiftyRouter);
 
-//   $urlRouterProvider.otherwise("/index");
-
-//   $stateProvider
-//   .state('index', {
-//     url: '/genres',
-//     templateUrl: 'genre.html'
-//   })
-//   .state('new', {
-//     url: '/new',
-//     templateUrl: 'new.html'
-//   })
-//   .state('about', {
-//     url: '/about',
-//     templateUrl: 'about.html'
-//   })
-//   .state('show', {
-//     url: '/criminals/:id',
-//     templateUrl: 'show.html'
-//   });
+  function FiftyRouter($stateProvider, $urlRouterProvider){
 
 
-// }
+  $stateProvider
+  .state('genres', {
+    url: '/genres',
+    templateUrl: 'genre.html'
+  })
+  .state('root', {
+    url: '/',
+    templateUrl: 'index.html'
+  })
+  .state('track', {
+    url: '/track',
+    templateUrl: 'track.html'
+  })
+
+  $urlRouterProvider.otherwise("/");
+
+}

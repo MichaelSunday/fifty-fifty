@@ -6,17 +6,18 @@ LoginController.$inject = ['$http'];
 function LoginController($http){
   var self = this;
   self.all = [];
-  self.getGenres = getGenres;
 
-  var getLogin = function(){
+  self.auth = function(){
     $http
-      .get('http://localhost:3000/users/login')
-      .then(function(response){
-        self.all = response.data;
-        console.log(response.data);
-    });
-  }
+      .post('http://localhost:3000/users/login', 
+        {
+          "email":self.email,
+          "password":self.password
+        })
 
-  getLogin();
+      .then(function(response){
+        console.log(response);
+      })
+  }
 
 }

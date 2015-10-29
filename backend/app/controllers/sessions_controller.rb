@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 	end
 
 	def create
-		user = User.find_by_email(params[:user][:email]).try(:authenticate, params[:user][:password])
+		user = User.find_by_email(params[:email]).try(:authenticate, params[:password])
 		if user
 			puts "success"
 			session[:user_id] = user.id
