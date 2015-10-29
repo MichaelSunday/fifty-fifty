@@ -39,14 +39,35 @@ function TrackController($http, $rootScope){
       .then(function(response){
         self.all = response.data;
         console.log(response.data);
+        playTrack(response.data.preview_url);
+    });
+  }    
+
+
+    self.postDislikes = function(){
+      var user_id = $rootScope.user.id
+      var spotify_id = self.all.artists[0].id;
+    $http
+      .post('http://localhost:3000/likes/',{
+        "user_id":user_id,
+        "spotify_id":spotify_id
+      })
+      .then(function(response){
+        self.all = response.data;
+        console.log(response.data);
+        playTrack(response.data.preview_url);
     });
   }
 
   getTracks();
 
   var playTrack = function(track){
-    var song = new Audio(track);
-    song.play();
+    if (!!self.song) {
+      self.song.pause()
+
+    }
+    self.song = new Audio(track);
+    self.song.play();
   }
 
 }
