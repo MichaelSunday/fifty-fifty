@@ -14405,3 +14405,516 @@ Can't verify CSRF token authenticity
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 22], ["user_id", 8], ["created_at", "2015-10-29 22:56:19.594642"], ["updated_at", "2015-10-29 22:56:19.594642"]]
   [1m[35m (0.4ms)[0m  COMMIT
 Completed 200 OK in 881ms (Views: 0.9ms | ActiveRecord: 3.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 16:02:18 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 16:02:18 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 84ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 16:02:18 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 258ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 16:02:41 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 93ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 16:02:41 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 240ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 16:02:51 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1000ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/likes/" for ::1 at 2015-10-29 16:02:59 -0700
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:02:59 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"6Mo9PoU6svvhgEum7wh2Nd", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "6Mo9PoU6svvhgEum7wh2Nd"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "6Mo9PoU6svvhgEum7wh2Nd"], ["created_at", "2015-10-29 23:02:59.045414"], ["updated_at", "2015-10-29 23:02:59.045414"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 23], ["user_id", 8], ["created_at", "2015-10-29 23:02:59.049565"], ["updated_at", "2015-10-29 23:02:59.049565"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 833ms (Views: 0.8ms | ActiveRecord: 2.4ms)
+  [1m[36mLike Load (2.4ms)[0m  [1mSELECT "likes".* FROM "likes"[0m
+  [1m[35mDislike Load (1.8ms)[0m  SELECT "dislikes".* FROM "dislikes"
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 16:12:47 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 16:12:47 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 116ms (Views: 4.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 16:12:48 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 520ms (Views: 249.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 16:12:59 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 789ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/likes/" for ::1 at 2015-10-29 16:13:03 -0700
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:13:03 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"20qISvAhX20dpIbOOzGK3q", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.4ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "20qISvAhX20dpIbOOzGK3q"]]
+  [1m[35m (1.4ms)[0m  BEGIN
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 9], ["user_id", 8], ["created_at", "2015-10-29 23:13:03.880193"], ["updated_at", "2015-10-29 23:13:03.880193"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Completed 200 OK in 778ms (Views: 1.1ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:13:13 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"2GHclqNVjqGuiE5mA7BEoc", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "2GHclqNVjqGuiE5mA7BEoc"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "2GHclqNVjqGuiE5mA7BEoc"], ["created_at", "2015-10-29 23:13:13.457274"], ["updated_at", "2015-10-29 23:13:13.457274"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 24], ["user_id", 8], ["created_at", "2015-10-29 23:13:13.520118"], ["updated_at", "2015-10-29 23:13:13.520118"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 621ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:13:16 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"0Mz5XE0kb1GBnbLQm2VbcO", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "0Mz5XE0kb1GBnbLQm2VbcO"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 6], ["user_id", 8], ["created_at", "2015-10-29 23:13:16.880793"], ["updated_at", "2015-10-29 23:13:16.880793"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 503ms (Views: 1.3ms | ActiveRecord: 1.7ms)
+
+
+Started OPTIONS "/dislike/" for ::1 at 2015-10-29 16:13:22 -0700
+
+
+Started POST "/dislike/" for ::1 at 2015-10-29 16:13:22 -0700
+
+ActionController::RoutingError (No route matches [POST] "/dislike"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 16:14:36 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 82ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 16:14:36 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 295ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 16:14:43 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 836ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/dislikes/" for ::1 at 2015-10-29 16:14:46 -0700
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 16:14:46 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"3nFkdlSjzX9mRTtwJOzDYB", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "3nFkdlSjzX9mRTtwJOzDYB"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "3nFkdlSjzX9mRTtwJOzDYB"], ["created_at", "2015-10-29 23:14:46.960027"], ["updated_at", "2015-10-29 23:14:46.960027"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 25], ["user_id", 8], ["created_at", "2015-10-29 23:14:46.968812"], ["updated_at", "2015-10-29 23:14:46.968812"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 903ms (Views: 1.2ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:14:57 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"7z52HB2osIQNcgAni23TdH", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "7z52HB2osIQNcgAni23TdH"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "7z52HB2osIQNcgAni23TdH"], ["created_at", "2015-10-29 23:14:57.612131"], ["updated_at", "2015-10-29 23:14:57.612131"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 26], ["user_id", 8], ["created_at", "2015-10-29 23:14:57.614777"], ["updated_at", "2015-10-29 23:14:57.614777"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 827ms (Views: 0.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:15:02 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"6dAzEnFjciJ34MXln91Itd", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "6dAzEnFjciJ34MXln91Itd"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "6dAzEnFjciJ34MXln91Itd"], ["created_at", "2015-10-29 23:15:02.155516"], ["updated_at", "2015-10-29 23:15:02.155516"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 27], ["user_id", 8], ["created_at", "2015-10-29 23:15:02.159245"], ["updated_at", "2015-10-29 23:15:02.159245"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3082ms (Views: 1.0ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:15:05 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"4Oy0tTQfhCKKaBPkQJhZHK", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "4Oy0tTQfhCKKaBPkQJhZHK"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "4Oy0tTQfhCKKaBPkQJhZHK"], ["created_at", "2015-10-29 23:15:05.338179"], ["updated_at", "2015-10-29 23:15:05.338179"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 28], ["user_id", 8], ["created_at", "2015-10-29 23:15:05.343218"], ["updated_at", "2015-10-29 23:15:05.343218"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 886ms (Views: 1.2ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:15:13 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"7kaEEK2cQh07aEfEEBd4Hn", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "7kaEEK2cQh07aEfEEBd4Hn"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "7kaEEK2cQh07aEfEEBd4Hn"], ["created_at", "2015-10-29 23:15:13.860164"], ["updated_at", "2015-10-29 23:15:13.860164"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 29], ["user_id", 8], ["created_at", "2015-10-29 23:15:13.863698"], ["updated_at", "2015-10-29 23:15:13.863698"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 710ms (Views: 1.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 16:15:18 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"4NtiLs5NpjgZDHNBEMbjKz", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "4NtiLs5NpjgZDHNBEMbjKz"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "4NtiLs5NpjgZDHNBEMbjKz"], ["created_at", "2015-10-29 23:15:18.059608"], ["updated_at", "2015-10-29 23:15:18.059608"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 30], ["user_id", 8], ["created_at", "2015-10-29 23:15:18.063356"], ["updated_at", "2015-10-29 23:15:18.063356"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 200 OK in 893ms (Views: 1.2ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 16:15:28 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"3HWDXrMIv9K5CbMmnATLmM", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "3HWDXrMIv9K5CbMmnATLmM"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "3HWDXrMIv9K5CbMmnATLmM"], ["created_at", "2015-10-29 23:15:28.285579"], ["updated_at", "2015-10-29 23:15:28.285579"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 31], ["user_id", 8], ["created_at", "2015-10-29 23:15:28.289463"], ["updated_at", "2015-10-29 23:15:28.289463"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 675ms (Views: 1.2ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 16:15:33 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"2Ucuimm4PidyKOWYcCezag", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "2Ucuimm4PidyKOWYcCezag"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "2Ucuimm4PidyKOWYcCezag"], ["created_at", "2015-10-29 23:15:33.937701"], ["updated_at", "2015-10-29 23:15:33.937701"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 32], ["user_id", 8], ["created_at", "2015-10-29 23:15:33.941356"], ["updated_at", "2015-10-29 23:15:33.941356"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 200 OK in 698ms (Views: 1.5ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 16:15:38 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"4a32m0kHbxZm3V7jHpW60g", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "4a32m0kHbxZm3V7jHpW60g"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "4a32m0kHbxZm3V7jHpW60g"], ["created_at", "2015-10-29 23:15:38.200337"], ["updated_at", "2015-10-29 23:15:38.200337"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 33], ["user_id", 8], ["created_at", "2015-10-29 23:15:38.204127"], ["updated_at", "2015-10-29 23:15:38.204127"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 741ms (Views: 1.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 16:15:40 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 313ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 16:15:55 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 760ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:16:00 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"5HjxwAJ0uZIKFa4tU3msrg", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "5HjxwAJ0uZIKFa4tU3msrg"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "5HjxwAJ0uZIKFa4tU3msrg"], ["created_at", "2015-10-29 23:16:00.766198"], ["updated_at", "2015-10-29 23:16:00.766198"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 34], ["user_id", 8], ["created_at", "2015-10-29 23:16:00.769986"], ["updated_at", "2015-10-29 23:16:00.769986"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 725ms (Views: 1.2ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:16:15 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"7lkzEj6pZz8BWsRkLH4VpW", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "7lkzEj6pZz8BWsRkLH4VpW"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "7lkzEj6pZz8BWsRkLH4VpW"], ["created_at", "2015-10-29 23:16:15.828383"], ["updated_at", "2015-10-29 23:16:15.828383"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 35], ["user_id", 8], ["created_at", "2015-10-29 23:16:15.832923"], ["updated_at", "2015-10-29 23:16:15.832923"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 745ms (Views: 1.6ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 16:16:24 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"7tQrfzmk4epwydOGCAIgWU", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "7tQrfzmk4epwydOGCAIgWU"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "7tQrfzmk4epwydOGCAIgWU"], ["created_at", "2015-10-29 23:16:24.417023"], ["updated_at", "2015-10-29 23:16:24.417023"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 36], ["user_id", 8], ["created_at", "2015-10-29 23:16:24.420780"], ["updated_at", "2015-10-29 23:16:24.420780"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 2792ms (Views: 0.8ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:16:33 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"5OTNk4JcqEWuBQjz3V2vjd", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "5OTNk4JcqEWuBQjz3V2vjd"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "5OTNk4JcqEWuBQjz3V2vjd"], ["created_at", "2015-10-29 23:16:33.743194"], ["updated_at", "2015-10-29 23:16:33.743194"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 37], ["user_id", 8], ["created_at", "2015-10-29 23:16:33.746863"], ["updated_at", "2015-10-29 23:16:33.746863"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 589ms (Views: 1.2ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:16:38 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"2lVhakIDl7jV6y0xjHXlF7", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "2lVhakIDl7jV6y0xjHXlF7"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "2lVhakIDl7jV6y0xjHXlF7"], ["created_at", "2015-10-29 23:16:38.644779"], ["updated_at", "2015-10-29 23:16:38.644779"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 38], ["user_id", 8], ["created_at", "2015-10-29 23:16:38.648557"], ["updated_at", "2015-10-29 23:16:38.648557"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 513ms (Views: 1.2ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:16:42 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"0nq64XZMWV1s7XHXIkdH7K", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "0nq64XZMWV1s7XHXIkdH7K"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "0nq64XZMWV1s7XHXIkdH7K"], ["created_at", "2015-10-29 23:16:42.462428"], ["updated_at", "2015-10-29 23:16:42.462428"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 39], ["user_id", 8], ["created_at", "2015-10-29 23:16:42.466444"], ["updated_at", "2015-10-29 23:16:42.466444"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 532ms (Views: 1.2ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:16:48 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"252zzAWhtQayw6tlcCkSZu", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "252zzAWhtQayw6tlcCkSZu"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "252zzAWhtQayw6tlcCkSZu"], ["created_at", "2015-10-29 23:16:48.078645"], ["updated_at", "2015-10-29 23:16:48.078645"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 40], ["user_id", 8], ["created_at", "2015-10-29 23:16:48.082387"], ["updated_at", "2015-10-29 23:16:48.082387"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 514ms (Views: 0.8ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:16:50 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"7Kp0hqugVhVXX8WnXnOXXy", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "7Kp0hqugVhVXX8WnXnOXXy"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "7Kp0hqugVhVXX8WnXnOXXy"], ["created_at", "2015-10-29 23:16:50.763244"], ["updated_at", "2015-10-29 23:16:50.763244"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 41], ["user_id", 8], ["created_at", "2015-10-29 23:16:50.766984"], ["updated_at", "2015-10-29 23:16:50.766984"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 530ms (Views: 1.4ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 16:16:53 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"0Zc1xDL9TuQdcNJCuqmlHE", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "0Zc1xDL9TuQdcNJCuqmlHE"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "0Zc1xDL9TuQdcNJCuqmlHE"], ["created_at", "2015-10-29 23:16:53.877979"], ["updated_at", "2015-10-29 23:16:53.877979"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 42], ["user_id", 8], ["created_at", "2015-10-29 23:16:53.881610"], ["updated_at", "2015-10-29 23:16:53.881610"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 523ms (Views: 0.8ms | ActiveRecord: 2.4ms)
+  [1m[36mDislike Load (0.8ms)[0m  [1mSELECT "dislikes".* FROM "dislikes"[0m
+  [1m[35mLike Load (1.2ms)[0m  SELECT "likes".* FROM "likes"
+  [1m[36mLike Load (0.6ms)[0m  [1mSELECT "likes".* FROM "likes"[0m
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 16:22:13 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 86ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 16:22:13 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 523ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 16:22:34 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 873ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:22:44 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"1W9qOBYRTfP7HcizWN43G1", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "1W9qOBYRTfP7HcizWN43G1"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 8], ["user_id", 8], ["created_at", "2015-10-29 23:22:44.267182"], ["updated_at", "2015-10-29 23:22:44.267182"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 843ms (Views: 0.8ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 16:22:55 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"2gINJ8xw86xawPyGvx1bla", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "2gINJ8xw86xawPyGvx1bla"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 10], ["user_id", 8], ["created_at", "2015-10-29 23:22:55.774922"], ["updated_at", "2015-10-29 23:22:55.774922"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 545ms (Views: 0.6ms | ActiveRecord: 1.6ms)
+
+
+Started OPTIONS "/likes/" for ::1 at 2015-10-29 16:23:06 -0700
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 16:23:06 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"4dBOV77d0Fy9KcTZkieXcu", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "4dBOV77d0Fy9KcTZkieXcu"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "4dBOV77d0Fy9KcTZkieXcu"], ["created_at", "2015-10-29 23:23:06.979203"], ["updated_at", "2015-10-29 23:23:06.979203"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 43], ["user_id", 8], ["created_at", "2015-10-29 23:23:06.983883"], ["updated_at", "2015-10-29 23:23:06.983883"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 200 OK in 536ms (Views: 0.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 16:23:11 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 2516ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 16:23:21 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 592ms (Views: 1.5ms | ActiveRecord: 0.0ms)

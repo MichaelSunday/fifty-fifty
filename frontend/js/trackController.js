@@ -48,7 +48,7 @@ function TrackController($http, $rootScope){
       var user_id = $rootScope.user.id
       var spotify_id = self.all.artists[0].id;
     $http
-      .post('http://localhost:3000/likes/',{
+      .post('http://localhost:3000/dislikes/',{
         "user_id":user_id,
         "spotify_id":spotify_id
       })
