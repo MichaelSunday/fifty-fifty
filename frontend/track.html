@@ -9,13 +9,13 @@
   <script src="js/trackController.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body">
 	<section ng-controller="TrackController as tracks">
 
       <div ng-repeat="artist in tracks.all.artists">
-        {{ artist.name }}
+      <h1 class="center white big">{{ artist.name }}</h3>
       </div>
-      <p>{{tracks.all.name}}</p>
+      <h3 class="center white big">{{tracks.all.name}}</h3>
 <!--       <p id="url">{{tracks.all.preview_url}}</p>
       <audio autoplay="autoplay" controls="controls">  
          <source src="{{tracks.all.preview_url}}" />  
