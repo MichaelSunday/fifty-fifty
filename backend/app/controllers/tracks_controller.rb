@@ -1,4 +1,5 @@
 class TracksController < ApplicationController
+
 	def index
 		search = params[:genre]
 		genre = Echonest::Genre.new('39KJKWMRSLX8ZQVZN', search)

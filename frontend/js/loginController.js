@@ -1,9 +1,9 @@
 angular.module('FiftyFifty')
 .controller('LoginController', LoginController);
 
-LoginController.$inject = ['$http'];
+LoginController.$inject = ['$http', '$window', '$rootScope'];
 
-function LoginController($http){
+function LoginController($http, $window, $rootScope){
   var self = this;
   self.all = [];
 
@@ -17,6 +17,8 @@ function LoginController($http){
 
       .then(function(response){
         console.log(response);
+        $rootScope.user = response.data;
+        $window.location.href = '/#/genres';
       })
   }
 

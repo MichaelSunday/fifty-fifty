@@ -11,14 +11,15 @@ angular
 
 
   $stateProvider
+  .state('root', {
+    url: '/',
+    templateUrl: 'home.html'
+  })  
   .state('genres', {
     url: '/genres',
     templateUrl: 'genre.html'
   })
-  .state('root', {
-    url: '/',
-    templateUrl: 'index.html'
-  })
+
   .state('track', {
     url: '/track',
     templateUrl: 'track.html'

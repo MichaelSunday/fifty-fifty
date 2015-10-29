@@ -6,9 +6,11 @@ LikesController.$inject = ['$http'];
 function LikesController($http){
   var self = this;
   self.all = null;
-  self.getLikes = getLikes;
+  self.postLikes = postLikes;
 
-  var getTracks = function(){
+
+
+  var postLikes = function(){
     $http
       .post('http://localhost:3000/likes/')
       .then(function(response){
@@ -16,8 +18,6 @@ function LikesController($http){
         console.log(response.data);
     });
   }
-
-  getLikes();
 
 
   }

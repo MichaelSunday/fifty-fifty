@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get '/auth/spotify/callback', to: 'users#spotify'
   get '/genres' => 'genres#index', as: :homepage
   post '/tracks/:genre' => 'tracks#index', as: :music_player
-  post '/likes' => 'likes#index', as: :likes_table
+  post '/likes/' => 'likes#index', as: :likes_table
   post '/dislikes' => 'dislikes#index', as: :dislikes_table
   post '/artists' => 'artists#index', as: :artists_table
   post 'auth' => 'auth#authenticate'

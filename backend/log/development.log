@@ -11783,3 +11783,2244 @@ Processing by SessionsController#create as HTML
   Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
 Completed 200 OK in 82ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 10:59:54 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 310ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 10:59:58 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 259ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/undefined" for ::1 at 2015-10-29 11:01:55 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"undefined"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 5: Invalid parameter):
+  app/controllers/tracks_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (27.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (62.3ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:02:17 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 879ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/undefined" for ::1 at 2015-10-29 11:02:30 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"undefined"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 5: Invalid parameter):
+  app/controllers/tracks_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.0ms)
+
+
+Started POST "/tracks/undefined" for ::1 at 2015-10-29 11:02:32 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"undefined"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 280ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 5: Invalid parameter):
+  app/controllers/tracks_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (27.2ms)
+
+
+Started POST "/tracks/undefined" for ::1 at 2015-10-29 11:02:34 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"undefined"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 448ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 5: Invalid parameter):
+  app/controllers/tracks_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (26.9ms)
+
+
+Started OPTIONS "/tracks/" for ::1 at 2015-10-29 11:03:55 -0700
+
+
+Started POST "/tracks/" for ::1 at 2015-10-29 11:03:55 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.1ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd03922e960 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd03922ce80 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd039244dc8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started OPTIONS "/tracks" for ::1 at 2015-10-29 11:04:25 -0700
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:04:25 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd03922e960 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd03922ce80 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd039244dc8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 11:05:17 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:05:17 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{}}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+Completed 200 OK in 89ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:05:22 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.2ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd03922e960 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd03922ce80 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd039244dc8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:05:24 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.5ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd03922e960 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd03922ce80 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd039244dc8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:05:34 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.7ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd03922e960 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd03922ce80 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd039244dc8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:05:51 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.6ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd03922e960 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd03922ce80 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd039244dc8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:06:20 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+Completed 200 OK in 95ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:07:28 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.1ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd03922e960 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd03922ce80 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd039244dc8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:07:30 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd03922e960 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd03922ce80 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd039244dc8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:07:40 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.7ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd03922e960 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd03922ce80 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd039244dc8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:10:23 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"track"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 383ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 4: Missing parameter):
+  app/controllers/tracks_controller.rb:6:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.7ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd03922e960 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd03922ce80 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd039244dc8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:11:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TracksController#index as HTML
+  Parameters: {"track"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 4: Missing parameter):
+  app/controllers/tracks_controller.rb:6:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:12:37 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"track"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 2422ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 4: Missing parameter):
+  app/controllers/tracks_controller.rb:6:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.5ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:12:47 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{}}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+Completed 200 OK in 146ms (Views: 0.3ms | ActiveRecord: 8.7ms)
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:12:53 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"track"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 4: Missing parameter):
+  app/controllers/tracks_controller.rb:6:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:13:20 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"track"=>{}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 4: Missing parameter):
+  app/controllers/tracks_controller.rb:6:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:13:25 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 247ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:13:49 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract%20beats", "track"=>{"genre"=>"abstract%20beats"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 2428ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 5: Invalid parameter):
+  app/controllers/tracks_controller.rb:6:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks" for ::1 at 2015-10-29 11:14:01 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract%20beats", "track"=>{"genre"=>"abstract%20beats"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 247ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 5: Invalid parameter):
+  app/controllers/tracks_controller.rb:6:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.9ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks/abstract%20beats" for ::1 at 2015-10-29 11:15:28 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks/abstract%20beats"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (49.8ms)
+
+
+Started POST "/tracks/abstract%20beats" for ::1 at 2015-10-29 11:15:30 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks/abstract%20beats"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.7ms)
+
+
+Started POST "/tracks/abstract%20beats" for ::1 at 2015-10-29 11:15:32 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks/abstract%20beats"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (37.1ms)
+
+
+Started POST "/tracks/abstract%20beats" for ::1 at 2015-10-29 11:15:34 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks/abstract%20beats"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.5ms)
+
+
+Started POST "/tracks/abstract%20beats" for ::1 at 2015-10-29 11:16:01 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract beats"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 933ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20beats" for ::1 at 2015-10-29 11:16:05 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract beats"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 800ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20beats" for ::1 at 2015-10-29 11:16:38 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract beats"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 651ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/undefined" for ::1 at 2015-10-29 11:16:48 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"undefined"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.0ms)
+
+Echonest::Error (Error code 5: Invalid parameter):
+  app/controllers/tracks_controller.rb:6:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (83.1ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:17:12 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 807ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:17:55 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 629ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:18:09 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 807ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:18:57 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 757ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:19:23 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 559ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:19:35 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 660ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:19:37 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 640ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:19:47 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 530ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:20:50 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 784ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:21:16 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 630ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20beats" for ::1 at 2015-10-29 11:21:27 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract beats"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 536ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:21:39 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 232ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:22:59 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 598ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:32:11 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 319ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 11:32:32 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:32:32 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 230ms (Views: 0.3ms | ActiveRecord: 24.6ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:33:22 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 85ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:33:22 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 250ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:36:23 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 85ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:36:23 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 584ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:37:38 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 93ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:37:38 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 2487ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:38:11 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 79ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:38:12 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 247ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:38:21 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 321ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:38:44 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 2430ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:39:05 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 86ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:39:05 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 338ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 11:39:11 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 613ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `albums' for nil:NilClass):
+  app/controllers/tracks_controller.rb:10:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.9ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 11:39:24 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 473ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `albums' for nil:NilClass):
+  app/controllers/tracks_controller.rb:10:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (47.9ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 11:39:49 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 352ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `albums' for nil:NilClass):
+  app/controllers/tracks_controller.rb:10:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.5ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 11:39:51 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 653ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 11:40:00 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 298ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `albums' for nil:NilClass):
+  app/controllers/tracks_controller.rb:10:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.6ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 11:40:02 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 548ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 11:40:05 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 334ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `albums' for nil:NilClass):
+  app/controllers/tracks_controller.rb:10:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (27.2ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 11:40:08 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 618ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:40:49 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 307ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:41:01 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3045ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:41:54 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 87ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:41:54 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 272ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:42:48 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2969ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 11:43:03 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 11:43:03 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 84ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 11:43:03 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 371ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 11:43:16 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 775ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 12:59:59 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3378ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:00:08 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 949ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:00:11 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 668ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:00:14 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 762ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:04:03 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1022ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 13:04:25 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 13:04:25 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (8.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 102ms (Views: 0.2ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 13:04:25 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 228ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:04:36 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 922ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:09:21 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 870ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:11:05 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 796ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:12:12 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 930ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:12:56 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 622ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:14:02 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 952ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:14:27 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2991ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:14:51 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 551ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:16:18 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 742ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:16:40 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3113ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:16:58 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 728ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:19:38 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 925ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:19:51 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 631ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:19:59 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 676ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:20:01 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 687ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:20:44 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 806ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:20:47 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 672ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:20:55 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 601ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:21:49 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3016ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:21:52 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 521ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:22:06 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 528ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:22:19 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 515ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:22:35 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 526ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:22:43 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 885ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:22:50 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 623ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:22:52 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 576ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:23:13 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 700ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:23:24 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 556ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:23:33 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 508ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:23:49 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 550ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20idm" for ::1 at 2015-10-29 13:24:02 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract idm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 662ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 13:24:36 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 191ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:25:07 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1896ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:25:51 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3031ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:26:28 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 909ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:27:02 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2938ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:27:23 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1328ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:27:32 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1309ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:27:44 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1201ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:27:50 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1154ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:28:57 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 788ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:29:09 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 778ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:29:53 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 810ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:32:14 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2967ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:32:24 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 757ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:32:36 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 550ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:32:54 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 533ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:33:02 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 773ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:33:33 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 746ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:33:48 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2926ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:34:14 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2051ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:35:12 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3135ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:35:36 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 783ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:35:54 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 886ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:36:24 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 842ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:36:31 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1113ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:36:45 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2963ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:37:01 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1079ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:37:42 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 997ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:37:47 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 787ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:38:02 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2926ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:38:48 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 828ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:39:00 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 750ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:39:21 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 745ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:41:28 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3189ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:41:36 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 723ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:42:17 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 804ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:42:23 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 751ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:42:51 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 799ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:45:11 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 888ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:45:30 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 746ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:47:06 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 944ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:51:57 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1069ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:51:59 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 787ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:52:31 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 585ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:53:01 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 894ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:53:52 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 854ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:54:20 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 685ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:54:31 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 613ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:54:59 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 604ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:56:06 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1026ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:56:10 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 628ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:56:13 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 936ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:56:21 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 834ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:56:26 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 684ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 13:56:55 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 877ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 13:57:05 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 275ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 13:57:40 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 748ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 14:17:22 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3518ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:17:40 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 204ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 14:17:48 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 14:17:48 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (4.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 100ms (Views: 0.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:17:48 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 208ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 14:17:58 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 767ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 14:28:49 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 14:28:49 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 91ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:28:49 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 312ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 14:28:54 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 814ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 14:29:07 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 87ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:29:07 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 277ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 14:29:12 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 564ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 14:29:34 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 82ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:29:34 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 277ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 14:29:38 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 620ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 14:37:34 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 320ms (Views: 0.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/genre" for ::1 at 2015-10-29 14:38:41 -0700
+
+ActionController::RoutingError (No route matches [GET] "/genre"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (127.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (134.3ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 14:44:17 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 668ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `albums' for nil:NilClass):
+  app/controllers/tracks_controller.rb:10:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (39.6ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 14:44:40 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 14:44:40 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 87ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:44:40 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 318ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 14:44:53 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 745ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 14:53:00 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2981ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:53:06 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 283ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 14:53:34 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 657ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:53:39 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 204ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:53:52 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 306ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 14:53:52 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 304ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `albums' for nil:NilClass):
+  app/controllers/tracks_controller.rb:10:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:53:56 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 250ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 14:58:17 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 14:58:17 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 84ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:58:17 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 319ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstractro" for ::1 at 2015-10-29 14:58:43 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstractro"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 976ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:58:50 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 187ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 14:59:08 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 87ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 14:59:09 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 214ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 14:59:22 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3089ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 15:21:11 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 15:21:11 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 140ms (Views: 0.4ms | ActiveRecord: 31.4ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 15:21:11 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 385ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 15:21:30 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 914ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 15:30:19 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 81ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 15:30:19 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 302ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 15:30:36 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 864ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 15:30:39 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 236ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 15:31:04 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 821ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 15:31:08 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 334ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 15:31:26 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 731ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/likes/" for ::1 at 2015-10-29 15:31:34 -0700
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 15:31:34 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"5me0Irg2ANcsgc93uaYrpb", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (2.8ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "5me0Irg2ANcsgc93uaYrpb"]]
+  [1m[36m (1.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "5me0Irg2ANcsgc93uaYrpb"], ["created_at", "2015-10-29 22:31:35.006277"], ["updated_at", "2015-10-29 22:31:35.006277"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 4], ["user_id", 8], ["created_at", "2015-10-29 22:31:35.029901"], ["updated_at", "2015-10-29 22:31:35.029901"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 770ms (Views: 1.1ms | ActiveRecord: 21.8ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 15:31:59 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"6O2zJ0tId7g07yzHtX0yap", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "6O2zJ0tId7g07yzHtX0yap"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "6O2zJ0tId7g07yzHtX0yap"], ["created_at", "2015-10-29 22:31:59.262888"], ["updated_at", "2015-10-29 22:31:59.262888"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 5], ["user_id", 8], ["created_at", "2015-10-29 22:31:59.265576"], ["updated_at", "2015-10-29 22:31:59.265576"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 810ms (Views: 0.9ms | ActiveRecord: 1.8ms)
