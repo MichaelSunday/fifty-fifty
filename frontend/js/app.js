@@ -25,6 +25,11 @@ angular
     templateUrl: 'track.html'
   })
 
+  .state('likes', {
+    url: '/likes',
+    templateUrl: 'likes.html'
+  })
+
   $urlRouterProvider.otherwise("/");
 
 }

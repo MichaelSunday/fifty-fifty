@@ -15482,3 +15482,888 @@ Completed 200 OK in 1037ms (Views: 1.0ms | ActiveRecord: 0.0ms)
 Started GET "/genres" for ::1 at 2015-10-29 19:00:52 -0700
 Processing by GenresController#index as HTML
 Completed 200 OK in 316ms (Views: 106.3ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mLike Load (3.0ms)[0m  SELECT "likes".* FROM "likes"
+  [1m[36mLike Load (0.5ms)[0m  [1mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 19:57:43 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 19:57:43 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (14.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 608ms (Views: 4.7ms | ActiveRecord: 72.2ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 19:57:44 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 3436ms (Views: 510.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 19:58:16 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 369ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 19:58:16 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 231ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 19:58:50 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 341ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 19:58:50 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 215ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 19:59:41 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 311ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 20:00:06 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 392ms (Views: 2.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:00:07 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 369ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/likes?user_id=8" for ::1 at 2015-10-29 20:00:16 -0700
+Processing by LikesController#oki as HTML
+  Parameters: {"user_id"=>"8"}
+  [1m[36mLike Load (1.7ms)[0m  [1mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+Completed 200 OK in 124ms (Views: 70.7ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:26:29 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 2513ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 20:26:35 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 20:26:35 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 124ms (Views: 0.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:26:35 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 410ms (Views: 205.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/likes?user_id=8" for ::1 at 2015-10-29 20:26:42 -0700
+
+SyntaxError (/Users/MichaelDomingo/gaWDI/w11/d05/music-project/fifty-fifty/backend/app/controllers/likes_controller.rb:36: syntax error, unexpected =>, expecting '}'
+			format.json { :json => @like_data}
+			                      ^):
+  app/controllers/likes_controller.rb:36: syntax error, unexpected =>, expecting '}'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (105.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (135.9ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:28:52 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 282ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 20:28:56 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 108ms (Views: 0.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:28:56 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 284ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 20:29:03 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 88ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:29:03 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 208ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/likes?user_id=8" for ::1 at 2015-10-29 20:29:05 -0700
+
+SyntaxError (/Users/MichaelDomingo/gaWDI/w11/d05/music-project/fifty-fifty/backend/app/controllers/likes_controller.rb:36: syntax error, unexpected =>, expecting '}'
+			format.json { :json => like_data}
+			                      ^):
+  app/controllers/likes_controller.rb:36: syntax error, unexpected =>, expecting '}'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.6ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:32:09 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 366ms (Views: 141.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 20:32:15 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 115ms (Views: 0.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:32:16 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 193ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/likes?user_id=8" for ::1 at 2015-10-29 20:32:22 -0700
+Processing by LikesController#oki as HTML
+  Parameters: {"user_id"=>"8"}
+  [1m[35mLike Load (0.6ms)[0m  SELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1  [["user_id", 8]]
+  [1m[36mArtist Load (3.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mArtist Load (1.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mArtist Load (0.6ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mArtist Load (0.3ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36mArtist Load (0.3ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 17]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 18]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 19]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 20]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 21]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 24]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 26]]
+  [1m[36mArtist Load (0.3ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 28]]
+  [1m[36mArtist Load (0.4ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 29]]
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 34]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 38]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 39]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 40]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 41]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 43]]
+  [1m[36mArtist Load (11.9ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 50]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 50]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 54]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 55]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 56]]
+  [1m[36mArtist Load (0.4ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1[0m  [["id", 57]]
+Completed 200 OK in 224ms (Views: 120.0ms | ActiveRecord: 29.2ms)
+  [1m[35mArtist Load (0.8ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT 1  [["id", 1]]
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:34:20 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 2488ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/alternative%20r&b" for ::1 at 2015-10-29 20:34:26 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"alternative r&b"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1168ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/genre" for ::1 at 2015-10-29 20:34:43 -0700
+
+ActionController::RoutingError (No route matches [POST] "/genre"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (73.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.4ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/genre" for ::1 at 2015-10-29 20:34:46 -0700
+
+ActionController::RoutingError (No route matches [POST] "/genre"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.1ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/genre" for ::1 at 2015-10-29 20:34:49 -0700
+
+ActionController::RoutingError (No route matches [POST] "/genre"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.6ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks?body=alternative%20r&b" for ::1 at 2015-10-29 20:35:05 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.2ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tracks?body=alternative%20r&b" for ::1 at 2015-10-29 20:35:10 -0700
+
+ActionController::RoutingError (No route matches [POST] "/tracks"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.1ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007faeb1cdc348 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007faeb258bdb8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007faeb2591da8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+  [1m[36mArtist Load (1.2ms)[0m  [1mSELECT "artists".* FROM "artists"[0m
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:37:49 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 335ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 20:51:01 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 20:51:01 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 92ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:51:01 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 364ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 20:51:17 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1362ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/likes/" for ::1 at 2015-10-29 20:51:43 -0700
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 20:51:43 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"3nFkdlSjzX9mRTtwJOzDYB", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.4ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "3nFkdlSjzX9mRTtwJOzDYB"]]
+  [1m[35m (1.3ms)[0m  BEGIN
+  [1m[36mSQL (7.5ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 25], ["user_id", 8], ["created_at", "2015-10-30 03:51:43.590583"], ["updated_at", "2015-10-30 03:51:43.590583"]]
+  [1m[35m (1.5ms)[0m  COMMIT
+Completed 200 OK in 1544ms (Views: 0.9ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 20:51:50 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 350ms (Views: 117.4ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 21:15:08 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 21:15:08 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 128ms (Views: 4.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:15:08 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 2692ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:16:20 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 245ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:17:31 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 2496ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:17:50 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 242ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:22:29 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 2817ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:22:56 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 242ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:23:24 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 385ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:23:54 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 2463ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:24:35 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 420ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:29:26 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 2524ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:31:04 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 234ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:31:24 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 265ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:32:34 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 1436ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:37:00 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 647ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:37:25 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 341ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:37:44 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 322ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:39:31 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 346ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20beats" for ::1 at 2015-10-29 21:39:39 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract beats"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1243ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:39:41 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 518ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:40:49 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 235ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:41:46 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 376ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:42:16 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 248ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:42:29 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 346ms (Views: 104.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:42:38 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 244ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:42:47 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 235ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/users/login" for ::1 at 2015-10-29 21:43:46 -0700
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 21:43:46 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (8.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 106ms (Views: 0.6ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:43:47 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 241ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/disco%20house" for ::1 at 2015-10-29 21:44:01 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"disco house"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1218ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/likes/" for ::1 at 2015-10-29 21:44:27 -0700
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 21:44:27 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"6CwQfN34JdGHfo0A752Lts", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.3ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "6CwQfN34JdGHfo0A752Lts"]]
+  [1m[35m (2.4ms)[0m  BEGIN
+  [1m[36mSQL (8.0ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "6CwQfN34JdGHfo0A752Lts"], ["created_at", "2015-10-30 04:44:27.117133"], ["updated_at", "2015-10-30 04:44:27.117133"]]
+  [1m[35m (2.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 59], ["user_id", 8], ["created_at", "2015-10-30 04:44:27.135502"], ["updated_at", "2015-10-30 04:44:27.135502"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 1065ms (Views: 3.6ms | ActiveRecord: 14.8ms)
+
+
+Started OPTIONS "/dislikes/" for ::1 at 2015-10-29 21:44:35 -0700
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 21:44:35 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"0Uh7PxwmTPlbP3TbwBG41h", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.9ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "0Uh7PxwmTPlbP3TbwBG41h"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "0Uh7PxwmTPlbP3TbwBG41h"], ["created_at", "2015-10-30 04:44:35.109898"], ["updated_at", "2015-10-30 04:44:35.109898"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 60], ["user_id", 8], ["created_at", "2015-10-30 04:44:35.124867"], ["updated_at", "2015-10-30 04:44:35.124867"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 557ms (Views: 1.6ms | ActiveRecord: 29.2ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 21:44:38 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"1RtyP3Yk376oIq4dB7VMzC", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "1RtyP3Yk376oIq4dB7VMzC"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "1RtyP3Yk376oIq4dB7VMzC"], ["created_at", "2015-10-30 04:44:38.133088"], ["updated_at", "2015-10-30 04:44:38.133088"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 61], ["user_id", 8], ["created_at", "2015-10-30 04:44:38.138091"], ["updated_at", "2015-10-30 04:44:38.138091"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 547ms (Views: 1.3ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/tracks/disco%20house" for ::1 at 2015-10-29 21:45:49 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"disco house"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1003ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:45:54 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 295ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/opm" for ::1 at 2015-10-29 21:46:17 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"opm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3487ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/opm" for ::1 at 2015-10-29 21:48:14 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"opm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1133ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/opm" for ::1 at 2015-10-29 21:48:20 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"opm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 925ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/opm" for ::1 at 2015-10-29 21:48:47 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"opm"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 752ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 21:49:04 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "a@a.com"]]
+Completed 200 OK in 89ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:49:05 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 237ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/deep%20pop%20punk" for ::1 at 2015-10-29 21:49:43 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"deep pop punk"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 759ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `albums' for nil:NilClass):
+  app/controllers/tracks_controller.rb:10:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (27.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (60.0ms)
+
+
+Started POST "/users/login" for ::1 at 2015-10-29 21:50:03 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"a@a.com", "password"=>"[FILTERED]", "session"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "a@a.com"]]
+Completed 200 OK in 96ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:50:03 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 231ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/abstract%20hip%20hop" for ::1 at 2015-10-29 21:50:11 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"abstract hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 808ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 21:50:22 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"5y78BoNH3MfpUYSEzIpmJA", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.4ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "5y78BoNH3MfpUYSEzIpmJA"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "5y78BoNH3MfpUYSEzIpmJA"], ["created_at", "2015-10-30 04:50:22.429137"], ["updated_at", "2015-10-30 04:50:22.429137"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 62], ["user_id", 8], ["created_at", "2015-10-30 04:50:22.437206"], ["updated_at", "2015-10-30 04:50:22.437206"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 200 OK in 757ms (Views: 0.8ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 21:50:39 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"4t6PdzsfCfNUNc7WykOiyF", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "4t6PdzsfCfNUNc7WykOiyF"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "4t6PdzsfCfNUNc7WykOiyF"], ["created_at", "2015-10-30 04:50:39.641772"], ["updated_at", "2015-10-30 04:50:39.641772"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 63], ["user_id", 8], ["created_at", "2015-10-30 04:50:39.645290"], ["updated_at", "2015-10-30 04:50:39.645290"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 810ms (Views: 1.2ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 21:50:57 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"5AnInla2o81KQVvFzsN56i", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "5AnInla2o81KQVvFzsN56i"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "5AnInla2o81KQVvFzsN56i"], ["created_at", "2015-10-30 04:50:57.761930"], ["updated_at", "2015-10-30 04:50:57.761930"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 64], ["user_id", 8], ["created_at", "2015-10-30 04:50:57.769269"], ["updated_at", "2015-10-30 04:50:57.769269"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 200 OK in 3145ms (Views: 2.6ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 21:51:05 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"4pxU0h86QnMOe6iNIy7pCU", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.3ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "4pxU0h86QnMOe6iNIy7pCU"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "4pxU0h86QnMOe6iNIy7pCU"], ["created_at", "2015-10-30 04:51:05.124777"], ["updated_at", "2015-10-30 04:51:05.124777"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 65], ["user_id", 8], ["created_at", "2015-10-30 04:51:05.129385"], ["updated_at", "2015-10-30 04:51:05.129385"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 820ms (Views: 0.5ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 21:51:09 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"3MUu3JEshxSm812Hrfwa7q", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "3MUu3JEshxSm812Hrfwa7q"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "3MUu3JEshxSm812Hrfwa7q"], ["created_at", "2015-10-30 04:51:09.714089"], ["updated_at", "2015-10-30 04:51:09.714089"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 66], ["user_id", 8], ["created_at", "2015-10-30 04:51:09.721869"], ["updated_at", "2015-10-30 04:51:09.721869"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 200 OK in 832ms (Views: 0.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/genres" for ::1 at 2015-10-29 21:51:18 -0700
+Processing by GenresController#index as HTML
+Completed 200 OK in 382ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/hip%20hop" for ::1 at 2015-10-29 21:52:17 -0700
+Processing by TracksController#index as HTML
+  Parameters: {"genre"=>"hip hop"}
+Can't verify CSRF token authenticity
+Completed 200 OK in 3078ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/likes/" for ::1 at 2015-10-29 21:52:49 -0700
+Processing by LikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"1YfEcTuGvBQ8xSD1f53UnK", "like"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1[0m  [["spotify_id", "1YfEcTuGvBQ8xSD1f53UnK"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["spotify_id", "1YfEcTuGvBQ8xSD1f53UnK"], ["created_at", "2015-10-30 04:52:49.733331"], ["updated_at", "2015-10-30 04:52:49.733331"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["artist_id", 67], ["user_id", 8], ["created_at", "2015-10-30 04:52:49.738317"], ["updated_at", "2015-10-30 04:52:49.738317"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 897ms (Views: 1.0ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/dislikes/" for ::1 at 2015-10-29 21:52:54 -0700
+Processing by DislikesController#index as HTML
+  Parameters: {"user_id"=>8, "spotify_id"=>"3TVXtAsR1Inumwj472S9r4", "dislike"=>{"user_id"=>8}}
+Can't verify CSRF token authenticity
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."spotify_id" = $1 LIMIT 1  [["spotify_id", "3TVXtAsR1Inumwj472S9r4"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("spotify_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["spotify_id", "3TVXtAsR1Inumwj472S9r4"], ["created_at", "2015-10-30 04:52:54.969042"], ["updated_at", "2015-10-30 04:52:54.969042"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "dislikes" ("artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 68], ["user_id", 8], ["created_at", "2015-10-30 04:52:54.972178"], ["updated_at", "2015-10-30 04:52:54.972178"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 721ms (Views: 1.3ms | ActiveRecord: 1.7ms)

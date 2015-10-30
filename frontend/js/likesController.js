@@ -1,9 +1,9 @@
 angular.module('FiftyFifty')
 .controller('LikesController', LikesController);
 
-LikesController.$inject = ['$http'];
+LikesController.$inject = ['$http', '$rootScope'];
 
-function LikesController($http){
+function LikesController($http, $rootScope){
   var self = this;
   self.all = null;
   self.postLikes = postLikes;
@@ -11,15 +11,15 @@ function LikesController($http){
 
 
   var postLikes = function(){
+    var user_id = $rootScope.user.id
     $http
-      .post('http://localhost:3000/likes/')
+      .get('http://localhost:3000/likes?user_id=' + user_id)
       .then(function(response){
         self.all = response.data;
         console.log(response.data);
     });
   }
-
-
-  }
+  postLikes();
 
 }
+

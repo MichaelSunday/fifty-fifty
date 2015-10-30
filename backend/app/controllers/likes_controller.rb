@@ -20,4 +20,22 @@ class LikesController < ApplicationController
 
 	
 	end
+	def oki
+		user_id = params[:user_id]
+		@like = Like.where(user_id: user_id).all
+		@like_data = []
+		@like.each do |like|
+			artist_i = Artist.find(like.artist_id)
+			artist_name = artist_i.name
+			artist = {"artist" => artist_name}
+			like = JSON::parse(like.to_json).merge(artist)
+			@like_data << like
+		end
+		render json: @like_data
+		# respond_to do |format|
+		# 	format.html
+		# 	format.json { :json => @like_data}
+		# end
+
+	end
 end

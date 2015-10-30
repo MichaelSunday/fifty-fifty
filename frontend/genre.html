@@ -1,7 +1,16 @@
 <section ng-controller="GenreController as genres">
-	<li ng-repeat="genre in genres.all">
-		<a href="/#/track?body={{genre.name}}">
-			<p>{{genre.name}}</p>
-		</a>
-	</li>
+<h1 class="white bigger center title">Fifty Fifty</h1>
+  <!-- <a class="white big center"href="/#/likes">Likes!</a> -->
+	<div ng-repeat="genre in genres.all">
+<!-- 		<a href="/#/track?body={{genre.name}}">
+			<p class="white">{{genre.name}}</p>
+		</a> -->
+		<div class="wrapper">
+		  <div class="col-xs-6 col-md-3">
+		    <a href="/#/track?body={{genre.name}}">
+		    	<p class="white med shrink">{{genre.name}}</p>
+		    </a>
+		  </div>
+		</div>
+	</div>
 </section>
