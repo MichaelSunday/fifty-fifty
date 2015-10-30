@@ -1,6 +1,7 @@
 
-<section ng-controller="TrackController as tracks" class="center white big middle">
+<section ng-controller="TrackController as tracks">
     <h1 class="white bigger center title">Fifty Fifty</h1>
+ <div class="center white big middle"> 
     <div ng-repeat="artist in tracks.all.artists">
     <h1>{{ artist.name }}</h3>
     </div>
@@ -14,6 +15,7 @@
         <i ng-click="tracks.postLikes()"class="fa fa-heart fa-3x"></i>
     </span>
   </div>
+</div>
 
 </section>
 
