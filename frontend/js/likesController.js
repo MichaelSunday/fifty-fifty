@@ -17,6 +17,7 @@ function LikesController($http, $rootScope){
       .then(function(response){
         self.all = response.data;
         console.log(response.data);
+        
     });
   }
   postLikes();

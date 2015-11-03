@@ -26,10 +26,14 @@ class LikesController < ApplicationController
 		@like_data = []
 		@like.each do |like|
 			artist_i = Artist.find(like.artist_id)
-			artist_name = artist_i.name
-			artist = {"artist" => artist_name}
-			like = JSON::parse(like.to_json).merge(artist)
-			@like_data << like
+			@like_data.push(artist_i)
+			# puts artist_i
+			# artist_name = artist_i.name
+			# artist = {"artist" => artist_name}
+			# like = JSON::parse(like.to_json).merge(artist)
+			# puts "YOOOOOOOOOOOo"
+			# @like_data << like
+			# puts artist_name
 		end
 		render json: @like_data
 		# respond_to do |format|

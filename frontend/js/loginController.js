@@ -22,4 +22,9 @@ function LoginController($http, $window, $rootScope){
       })
   }
 
+  self.reg = function(){
+    $http
+      .post('')
+  }
+
 }
