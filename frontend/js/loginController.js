@@ -24,7 +24,21 @@ function LoginController($http, $window, $rootScope){
 
   self.reg = function(){
     $http
-      .post('')
+      .post('http://localhost:3000/users/create', 
+      {
+        "name":self.name,
+        "email":self.email,
+        "password_confirmation":self.password_confirmation,
+        "password":self.password
+
+      })
+
+      .then(function(response){
+        console.log(response);
+        $rootScope.user = response.data;
+        $window.location.href = '/#/genres';
+      })
+
   }
 
 }
